@@ -1,74 +1,76 @@
-📊 Result Management System – Java Swing UI + File Handling
-A desktop application built with Java Swing for managing student result records efficiently. The system allows users to input student details and marks, calculate the average, determine pass/fail status, and automatically save the data to a text file. Designed with a clean and modern user interface, this application ensures simplicity, usability, and persistent storage using file handling.
+# Result Management System – Java Swing + File Handling
 
-✨ Key Features
-🎓 Student Info Input
-Enter student name, roll number, and marks for 3 subjects.
+The Result Management System is a desktop-based Java application designed to efficiently manage student academic records. Built using Java Swing, the system provides a modern graphical user interface for entering, calculating, and storing student result data with persistent file storage.
 
-📈 Automatic Result Calculation
-Computes average marks and determines Pass/Fail based on subject-wise criteria.
+This project demonstrates practical implementation of GUI development, event-driven programming, and file handling for data persistence.
 
-💾 File Handling Support
+# Key Features
+Student Information Management
 
-Results are automatically saved to results.txt.
+Input student details including:
 
-Data is reloaded from the file every time the application starts.
+Name
 
-📋 Tabular Data Display
-Results are shown in a scrollable JTable with proper formatting.
+Roll number
 
-🖼️ User-Friendly GUI
-Built using Java Swing with custom colors and layout for a modern feel.
+Marks for three subjects
 
-🖊️ Branding
-Footer label: Made by Azan Mehdi Shah.
+Automatic Result Processing
 
-🛠️ Technologies Used
-Java SE 8+
+Calculates average marks automatically
 
-Java Swing (GUI components)
+Determines Pass/Fail status based on subject-wise passing criteria
 
-File I/O (FileReader, FileWriter, BufferedReader)
+File Handling & Data Persistence
 
-JTable and DefaultTableModel
+Results are automatically saved in results.txt
 
-📂 File Structure
-bash
-Copy
-Edit
-📁 ResultManagementSystem/
-├── ResultManagementSystem.java    # Main application file
-├── results.txt                    # File for saved student records
-└── README.md                      # Project documentation
-📁 File Format (results.txt)
-Each line represents one student’s result in CSV format:
+Data is reloaded every time the application starts
 
-pgsql
-Copy
-Edit
-Name,RollNo,Subject1,Subject2,Subject3,Average,Status
-Example:
+Uses FileReader, FileWriter, and BufferedReader for efficient file operations
 
+Tabular Data Display
 
-Azan,21SW001,85,90,80,85.00,Pass
-Sara,21SW002,70,80,40,63.33,Pass
-🚀 How to Run
-Make sure Java is installed (java -version)
+Results are displayed in a scrollable JTable
 
-Clone or download the repository
+Uses DefaultTableModel for dynamic data updates
 
-Open the file ResultManagementSystem.java in any Java IDE (e.g., IntelliJ, NetBeans, Eclipse)
+User Interface Design
+
+Developed using Java Swing components
+
+Includes modern layout styling and clean navigation
+
+Footer branding label displaying developer credit
+
+# Technical Implementation
+
+Built using Java SE 8+
+
+GUI created using Swing
+
+Data storage implemented using CSV-style text file format
+
+Event handling implemented through ActionListeners	​
+
+# How to Run
+
+Ensure Java is installed (java -version)
+
+Clone or download repository
+
+Open ResultManagementSystem.java in any Java IDE
 
 Compile and run the program
 
-Input student data and click "Add Result"
+Enter student data and save results
 
-Check results.txt for saved entries
+# Learning Outcomes
 
-🧠 Pass/Fail Logic
-A student is marked Pass only if all three subjects have marks ≥ 33
+Desktop application development
 
-Otherwise, the student is marked as Fail
+GUI design principles
 
-The average is calculated as (sub1 + sub2 + sub3) / 3
+File-based data storage
 
+Data validation and business logic implementation
